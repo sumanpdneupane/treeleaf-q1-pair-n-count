@@ -82,3 +82,10 @@ The code uses a nested loop:
     * Inner loop runs 𝑛 − 𝑖 − 1 times.
 Thus, the time complexity is: O(n^2)
 ```
+
+## Space Complexity
+```
+The space complexity is: O(k) for storing k inversion pairs.
+For this example:
+    * Space complexity is proportional to the number of inversion pairs.
+```
