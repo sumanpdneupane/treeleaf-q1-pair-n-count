@@ -64,7 +64,7 @@ Inversion Pairs: [[1 2] [1 3] [1 4] [2 3] [2 4]]
 ## Example Walkthrough
 ```
 Array:[1, 9, 6, 4, 5]
-1. Compare A[0] =  withA[1], A[2], A[3], A[4]: No inversions.
+1. Compare A[0] = with A[1], A[2], A[3], A[4]: No inversions.
 2. Compare A[1] = 9:
     * A[1] > A[2] Pair (1,2)(1, 2)(1,2).
     * A[1] > A[3] Pair (1,3)(1, 3)(1,3).
