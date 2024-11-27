@@ -53,3 +53,32 @@ It receives:
     * count: Total number of inversions.
     * pairs: Slice containing all inversion pairs.
 These results are printed to the console.
+
+
+### Output
+``` cmd
+Total Inversions: 5
+Inversion Pairs: [[1 2] [1 3] [1 4] [2 3] [2 4]]
+```
+
+## Example Walkthrough
+```
+Array:[1, 9, 6, 4, 5]
+1. Compare A[0] =  withA[1], A[2], A[3], A[4]: No inversions.
+2. Compare A[1] = 9:
+    * A[1] > A[2] Pair (1,2)(1, 2)(1,2).
+    * A[1] > A[3] Pair (1,3)(1, 3)(1,3).
+    * A[1] > A[4] Pair (1,4)(1, 4)(1,4).
+3. Compare A[2] = 6:
+    * A[2] > A[3]: Pair (2,3)(2, 3)(2,3).
+    * A[2] > A[4]: Pair (2,4)(2, 4)(2,4).
+4. Compare A[3] = 4: No more inversions.
+```
+
+## Time Complexity
+```
+The code uses a nested loop:
+    * Outer loop runs 𝑛 times.
+    * Inner loop runs 𝑛 − 𝑖 − 1 times.
+Thus, the time complexity is: O(n^2)
+```
