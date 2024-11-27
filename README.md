@@ -8,7 +8,6 @@ Q1. Given an array, find the total number of inversions of it. If (i < j) and (A
 
 ## Answer
 ### Explanation of the Problem and Code
-```
 Problem Overview
 An inversion in an array is a condition where:
     1. 𝑖<𝑗, and
@@ -21,7 +20,6 @@ Sample Input
 For the input array: A[]=[1,9,6,4,5]
     * Total inversions: 5
     * Inversion pairs: [(1,2),(1,3),(1,4),(2,3),(2,4)]
-```
 
 ### Code Walkthrough
 
