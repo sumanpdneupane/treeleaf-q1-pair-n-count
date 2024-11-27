@@ -22,3 +22,36 @@ For the input array: A[]=[1,9,6,4,5]
     * Total inversions: 5
     * Inversion pairs: [(1,2),(1,3),(1,4),(2,3),(2,4)]
 ```
+
+### Code Walkthrough
+
+#### Input
+The input array is passed as array in the main function:
+``` go
+array := []int{1, 9, 6, 4, 5}
+```
+
+#### Core Function
+```
+The function CountAndGetPairInversionFromArray is called, which does the following:
+1. Initialize Counters:
+    * count: Keeps track of the total number of inversions.
+    * pairs: A slice of pairs to store the inversion indices (i,j).
+2. Iterate Through the Array:
+    * Use a nested loop to compare every pair of indices (i,j) such that i<j.
+    * Check if A[i]>A[j]. If true:
+        * Increment count.
+        * Append the pair (i,j) to pairs.
+3. Return the Results:
+    * The function returns the total count of inversions and the list of inversion pairs.
+```
+
+#### Main Function
+The main function calls CountAndGetPairInversionFromArray:
+``` go
+count, pairs := CountAndGetPairInversionFromArray(array)
+```
+It receives:
+    * count: Total number of inversions.
+    * pairs: Slice containing all inversion pairs.
+These results are printed to the console.
