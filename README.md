@@ -32,7 +32,6 @@ array := []int{1, 9, 6, 4, 5}
 ```
 
 #### Core Function
-```
 The function CountAndGetPairInversionFromArray is called, which does the following:
 1. Initialize Counters:
     * count: Keeps track of the total number of inversions.
@@ -44,7 +43,6 @@ The function CountAndGetPairInversionFromArray is called, which does the followi
         * Append the pair (i,j) to pairs.
 3. Return the Results:
     * The function returns the total count of inversions and the list of inversion pairs.
-```
 
 #### Main Function
 The main function calls CountAndGetPairInversionFromArray:
